@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53b5ea0d3a7ba98029ab8cb261d7d5f8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_53b5ea0d3a7ba98029ab8cb261d7d5f8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_53b5ea0d3a7ba98029ab8cb261d7d5f8 = L.map(
+                "map_53b5ea0d3a7ba98029ab8cb261d7d5f8",
+                {
+                    center: [-7.674370333776602, 109.67275997156051],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5ca3757908d1bb4412b1253c3375773f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_53b5ea0d3a7ba98029ab8cb261d7d5f8);
+        
+    
+            var heat_map_f27d80f096ab463d1a30bd1797b0f225 = L.heatLayer(
+                [[-7.64286, 109.6511], [-7.599176746, 109.5175901], [-7.565849527, 109.4918901], [-7.528810028, 109.5277899], [-7.670434606, 109.4273261], [-7.756997248, 109.4680527], [-7.769811958, 109.413004], [-7.770347829, 109.4200512], [-7.755809377, 109.4705394], [-7.757530159, 109.4650614], [-7.786535937, 109.6654947]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_53b5ea0d3a7ba98029ab8cb261d7d5f8);
+        
+    
+            var marker_cluster_a55b1f38253d41d0864b8e321482d04e = L.markerClusterGroup(
+                {}
+            );
+            map_53b5ea0d3a7ba98029ab8cb261d7d5f8.addLayer(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+            var marker_9d0b6e039cf9b8911bc6a78cabc4cace = L.marker(
+                [-7.64286, 109.6511],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_f4f3df994442841b35811e95d2ecbaeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_505292848bcbfaec47e3f0968dafb905 = $(`<div id="html_505292848bcbfaec47e3f0968dafb905" style="width: 100.0%; height: 100.0%;">Alun-alun kebumen</div>`)[0];
+                popup_f4f3df994442841b35811e95d2ecbaeb.setContent(html_505292848bcbfaec47e3f0968dafb905);
+            
+        
+
+        marker_9d0b6e039cf9b8911bc6a78cabc4cace.bindPopup(popup_f4f3df994442841b35811e95d2ecbaeb)
+        ;
+
+        
+    
+    
+            var marker_6e6df1c833fbad84be7037c3ae9c4618 = L.marker(
+                [-7.599176746, 109.5175901],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_636be44028dbef66b0ad1fdae2c240f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10a9aa6e30ac9bec3cfe89ad0f1b345e = $(`<div id="html_10a9aa6e30ac9bec3cfe89ad0f1b345e" style="width: 100.0%; height: 100.0%;">Benteng Van der Wijck</div>`)[0];
+                popup_636be44028dbef66b0ad1fdae2c240f1.setContent(html_10a9aa6e30ac9bec3cfe89ad0f1b345e);
+            
+        
+
+        marker_6e6df1c833fbad84be7037c3ae9c4618.bindPopup(popup_636be44028dbef66b0ad1fdae2c240f1)
+        ;
+
+        
+    
+    
+            var marker_0cf3ea6b6dd75207442ec7c5a36fe5e1 = L.marker(
+                [-7.565849527, 109.4918901],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_05ae1c6f808018efd5311d7c17e45f83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c4d166987a8be8c7a74f8130a182631 = $(`<div id="html_4c4d166987a8be8c7a74f8130a182631" style="width: 100.0%; height: 100.0%;">Waduk Sempor</div>`)[0];
+                popup_05ae1c6f808018efd5311d7c17e45f83.setContent(html_4c4d166987a8be8c7a74f8130a182631);
+            
+        
+
+        marker_0cf3ea6b6dd75207442ec7c5a36fe5e1.bindPopup(popup_05ae1c6f808018efd5311d7c17e45f83)
+        ;
+
+        
+    
+    
+            var marker_43790194ffc60fa8608de0eac43eb25a = L.marker(
+                [-7.528810028, 109.5277899],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_61b81faa64a3db41b73089f485375eba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19aca3ab85d11d4e8da2e019c9640ebc = $(`<div id="html_19aca3ab85d11d4e8da2e019c9640ebc" style="width: 100.0%; height: 100.0%;">Curug Sudimoro</div>`)[0];
+                popup_61b81faa64a3db41b73089f485375eba.setContent(html_19aca3ab85d11d4e8da2e019c9640ebc);
+            
+        
+
+        marker_43790194ffc60fa8608de0eac43eb25a.bindPopup(popup_61b81faa64a3db41b73089f485375eba)
+        ;
+
+        
+    
+    
+            var marker_ebac96457f02be53b3d3ce0bbcc40bac = L.marker(
+                [-7.670434606, 109.4273261],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_a2cc2752f17e6adaabdf9b01ad701b75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5aedfe4ac15d633be54f1c282c4a9cd = $(`<div id="html_e5aedfe4ac15d633be54f1c282c4a9cd" style="width: 100.0%; height: 100.0%;">Goa Jatijajar</div>`)[0];
+                popup_a2cc2752f17e6adaabdf9b01ad701b75.setContent(html_e5aedfe4ac15d633be54f1c282c4a9cd);
+            
+        
+
+        marker_ebac96457f02be53b3d3ce0bbcc40bac.bindPopup(popup_a2cc2752f17e6adaabdf9b01ad701b75)
+        ;
+
+        
+    
+    
+            var marker_d0d9e628127ac64d336be6af6ebfccfb = L.marker(
+                [-7.756997248, 109.4680527],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_60eb443d1535895c7bc09a37ec2c5913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78457ac02425bbd1d163003f5cf6a386 = $(`<div id="html_78457ac02425bbd1d163003f5cf6a386" style="width: 100.0%; height: 100.0%;">Pantai karang bolong</div>`)[0];
+                popup_60eb443d1535895c7bc09a37ec2c5913.setContent(html_78457ac02425bbd1d163003f5cf6a386);
+            
+        
+
+        marker_d0d9e628127ac64d336be6af6ebfccfb.bindPopup(popup_60eb443d1535895c7bc09a37ec2c5913)
+        ;
+
+        
+    
+    
+            var marker_3ebdb430c759707ed5e8ce6b5d8f02ec = L.marker(
+                [-7.769811958, 109.413004],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_f37c3aa7bc20e0f1e6d6cdeb28b32cd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfc23ebb988aa55d7d6bcca9e622dbad = $(`<div id="html_bfc23ebb988aa55d7d6bcca9e622dbad" style="width: 100.0%; height: 100.0%;">Pantai Menganti</div>`)[0];
+                popup_f37c3aa7bc20e0f1e6d6cdeb28b32cd8.setContent(html_bfc23ebb988aa55d7d6bcca9e622dbad);
+            
+        
+
+        marker_3ebdb430c759707ed5e8ce6b5d8f02ec.bindPopup(popup_f37c3aa7bc20e0f1e6d6cdeb28b32cd8)
+        ;
+
+        
+    
+    
+            var marker_629bc30fa217bddbf43bc6827ab10edf = L.marker(
+                [-7.770347829, 109.4200512],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_7e47efca9b724ef263859710c3d1c960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e2f78acbf52c798c419ee7f422bb2a = $(`<div id="html_04e2f78acbf52c798c419ee7f422bb2a" style="width: 100.0%; height: 100.0%;">Pantai pecaron</div>`)[0];
+                popup_7e47efca9b724ef263859710c3d1c960.setContent(html_04e2f78acbf52c798c419ee7f422bb2a);
+            
+        
+
+        marker_629bc30fa217bddbf43bc6827ab10edf.bindPopup(popup_7e47efca9b724ef263859710c3d1c960)
+        ;
+
+        
+    
+    
+            var marker_253db351390543dcb0b0cc4d37874af3 = L.marker(
+                [-7.755809377, 109.4705394],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_2b73859f52446c82458092f2a4188c00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56373ea49962096dbdb0ee2ed3f8dbb6 = $(`<div id="html_56373ea49962096dbdb0ee2ed3f8dbb6" style="width: 100.0%; height: 100.0%;">Pantai suwuk</div>`)[0];
+                popup_2b73859f52446c82458092f2a4188c00.setContent(html_56373ea49962096dbdb0ee2ed3f8dbb6);
+            
+        
+
+        marker_253db351390543dcb0b0cc4d37874af3.bindPopup(popup_2b73859f52446c82458092f2a4188c00)
+        ;
+
+        
+    
+    
+            var marker_3f8a522e1eddfad393e24e9dc359ba6c = L.marker(
+                [-7.757530159, 109.4650614],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_0e02c28ce3a483465071fe0775c68de2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f735bc823e4f4c396b5313c9f5889097 = $(`<div id="html_f735bc823e4f4c396b5313c9f5889097" style="width: 100.0%; height: 100.0%;">Sagara view</div>`)[0];
+                popup_0e02c28ce3a483465071fe0775c68de2.setContent(html_f735bc823e4f4c396b5313c9f5889097);
+            
+        
+
+        marker_3f8a522e1eddfad393e24e9dc359ba6c.bindPopup(popup_0e02c28ce3a483465071fe0775c68de2)
+        ;
+
+        
+    
+    
+            var marker_26e4f07ed476e42780a8a53337218e3b = L.marker(
+                [-7.786535937, 109.6654947],
+                {}
+            ).addTo(marker_cluster_a55b1f38253d41d0864b8e321482d04e);
+        
+    
+        var popup_d816cb04f0ad2d28f9cac28a9c654fd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3e91f75f25ece0121d1124cc82c5b42 = $(`<div id="html_f3e91f75f25ece0121d1124cc82c5b42" style="width: 100.0%; height: 100.0%;">Pantai bocor</div>`)[0];
+                popup_d816cb04f0ad2d28f9cac28a9c654fd0.setContent(html_f3e91f75f25ece0121d1124cc82c5b42);
+            
+        
+
+        marker_26e4f07ed476e42780a8a53337218e3b.bindPopup(popup_d816cb04f0ad2d28f9cac28a9c654fd0)
+        ;
+
+        
+    
+</script>
+</html>

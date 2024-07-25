@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4fa9563e59b71350b4b799153f6b8098 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4fa9563e59b71350b4b799153f6b8098" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4fa9563e59b71350b4b799153f6b8098 = L.map(
+                "map_4fa9563e59b71350b4b799153f6b8098",
+                {
+                    center: [-7.670504469610809, 109.65994424208708],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_621a71598d225fc70a1df95b00d27bc9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4fa9563e59b71350b4b799153f6b8098);
+        
+    
+            var heat_map_97bc082168ddc523430d196183f74b7c = L.heatLayer(
+                [[-7.609021959, 109.5180357], [-7.664416903, 109.6599535], [-7.665769172, 109.6617042], [-7.669898676, 109.6567401], [-7.628866522, 109.5684208], [-7.671802942, 109.5845873], [-7.669921948, 109.6596536], [-7.629545338, 109.5691603], [-7.606591312, 109.5081062]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_4fa9563e59b71350b4b799153f6b8098);
+        
+    
+            var marker_cluster_10eda8b1cc011853c73a6756799b5caa = L.markerClusterGroup(
+                {}
+            );
+            map_4fa9563e59b71350b4b799153f6b8098.addLayer(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+            var marker_fe9fea708e806b737d26ad65e61b1325 = L.marker(
+                [-7.609021959, 109.5180357],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_4f3ebe4518e641b952b9c05fd50f3c75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5072ef4f73565ac32f5e6b629fe7074e = $(`<div id="html_5072ef4f73565ac32f5e6b629fe7074e" style="width: 100.0%; height: 100.0%;">Mitra sehati swalayan Gombong:Jl. Yos Sudarso No.157 RT.03, Kawo, Gombong, Kec. Gombong, Kabupaten Kebumen, Jawa Tengah 54416</div>`)[0];
+                popup_4f3ebe4518e641b952b9c05fd50f3c75.setContent(html_5072ef4f73565ac32f5e6b629fe7074e);
+            
+        
+
+        marker_fe9fea708e806b737d26ad65e61b1325.bindPopup(popup_4f3ebe4518e641b952b9c05fd50f3c75)
+        ;
+
+        
+    
+    
+            var marker_1758fced41c7f8e3cef32ef8e82d70e5 = L.marker(
+                [-7.664416903, 109.6599535],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_c17058656840934157fd788b39536a21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f593b1264916b087a62ffb786885684d = $(`<div id="html_f593b1264916b087a62ffb786885684d" style="width: 100.0%; height: 100.0%;">Trio mall kebumen:Jl. H.M. Sarbini No.109, Gunungmujil, Bumirejo, Kec. Kebumen, Kabupaten Kebumen, Jawa Tengah 54316</div>`)[0];
+                popup_c17058656840934157fd788b39536a21.setContent(html_f593b1264916b087a62ffb786885684d);
+            
+        
+
+        marker_1758fced41c7f8e3cef32ef8e82d70e5.bindPopup(popup_c17058656840934157fd788b39536a21)
+        ;
+
+        
+    
+    
+            var marker_511af97f0a8ac61250b714f72f684feb = L.marker(
+                [-7.665769172, 109.6617042],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_bf247378f4a55f1b4e8713870dbdd76f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1af8edf25b3f03b395e7235d8bee921 = $(`<div id="html_f1af8edf25b3f03b395e7235d8bee921" style="width: 100.0%; height: 100.0%;">Toserba Jadi Baru:Jl. Kusuma No.7, Wonoyoso, Bumirejo, Kec. Kebumen, Kabupaten Kebumen, Jawa Tengah 54316</div>`)[0];
+                popup_bf247378f4a55f1b4e8713870dbdd76f.setContent(html_f1af8edf25b3f03b395e7235d8bee921);
+            
+        
+
+        marker_511af97f0a8ac61250b714f72f684feb.bindPopup(popup_bf247378f4a55f1b4e8713870dbdd76f)
+        ;
+
+        
+    
+    
+            var marker_a49940442d7c95961ed60a42f7c0103f = L.marker(
+                [-7.669898676, 109.6567401],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_50e2f336cafce71378144617b8c38135 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d96ce4d3a173c9e536f1434e873c38b1 = $(`<div id="html_d96ce4d3a173c9e536f1434e873c38b1" style="width: 100.0%; height: 100.0%;">Rita Pasaraya kebumen:Jl. Pahlawan No.58, Keposan, Kebumen, Kec. Kebumen, Kabupaten Kebumen, Jawa Tengah 54311</div>`)[0];
+                popup_50e2f336cafce71378144617b8c38135.setContent(html_d96ce4d3a173c9e536f1434e873c38b1);
+            
+        
+
+        marker_a49940442d7c95961ed60a42f7c0103f.bindPopup(popup_50e2f336cafce71378144617b8c38135)
+        ;
+
+        
+    
+    
+            var marker_f6fa13538809e76ab092c4ac1d7ceb11 = L.marker(
+                [-7.628866522, 109.5684208],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_7e68adb68842edbbc32f14750c432e4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b3552a41312a00c9f8e677e70b621d8 = $(`<div id="html_1b3552a41312a00c9f8e677e70b621d8" style="width: 100.0%; height: 100.0%;">Pusaka indah Karanganyar:Jl. Revolusi No.123, Pejuritan, Karanganyar, Kec. Karanganyar, Kabupaten Kebumen, Jawa Tengah 54364</div>`)[0];
+                popup_7e68adb68842edbbc32f14750c432e4a.setContent(html_1b3552a41312a00c9f8e677e70b621d8);
+            
+        
+
+        marker_f6fa13538809e76ab092c4ac1d7ceb11.bindPopup(popup_7e68adb68842edbbc32f14750c432e4a)
+        ;
+
+        
+    
+    
+            var marker_0bc0b6146c8c3a77d0ec460a298baf84 = L.marker(
+                [-7.671802942, 109.5845873],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_155014444637f4c79f05835dc48742a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34e6720c4ca732fea6d62341f61c719f = $(`<div id="html_34e6720c4ca732fea6d62341f61c719f" style="width: 100.0%; height: 100.0%;">SRC blekatuk:8HHM+6R4, Jl. Petanahan-Karanganyar, Wonosintru, Adikarto, Kec. Adimulyo, Kabupaten Kebumen, Jawa Tengah 54363</div>`)[0];
+                popup_155014444637f4c79f05835dc48742a8.setContent(html_34e6720c4ca732fea6d62341f61c719f);
+            
+        
+
+        marker_0bc0b6146c8c3a77d0ec460a298baf84.bindPopup(popup_155014444637f4c79f05835dc48742a8)
+        ;
+
+        
+    
+    
+            var marker_9e26ac729fc244a84e8f6ba30bdb6a91 = L.marker(
+                [-7.669921948, 109.6596536],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_2d071ce05b33cebb70810d9af179374d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bef73e92264628f7fafff0d22f168f41 = $(`<div id="html_bef73e92264628f7fafff0d22f168f41" style="width: 100.0%; height: 100.0%;">Pasar Tumenggung kebumen:Jl. Pahlawan No.147, Keposan, Kebumen, Kec. Kebumen, Kabupaten Kebumen, Jawa Tengah 54311</div>`)[0];
+                popup_2d071ce05b33cebb70810d9af179374d.setContent(html_bef73e92264628f7fafff0d22f168f41);
+            
+        
+
+        marker_9e26ac729fc244a84e8f6ba30bdb6a91.bindPopup(popup_2d071ce05b33cebb70810d9af179374d)
+        ;
+
+        
+    
+    
+            var marker_03f6c7b664065ad91c2fee84418fb9c9 = L.marker(
+                [-7.629545338, 109.5691603],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_79175685239af466d89a4ef7cea6bc95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cba4575d7f87ec7c7d244fb1654a627d = $(`<div id="html_cba4575d7f87ec7c7d244fb1654a627d" style="width: 100.0%; height: 100.0%;">Pasar Karanganyar:Pejuritan, Karanganyar, Kebumen Regency, Central Java 54364</div>`)[0];
+                popup_79175685239af466d89a4ef7cea6bc95.setContent(html_cba4575d7f87ec7c7d244fb1654a627d);
+            
+        
+
+        marker_03f6c7b664065ad91c2fee84418fb9c9.bindPopup(popup_79175685239af466d89a4ef7cea6bc95)
+        ;
+
+        
+    
+    
+            var marker_8e293f13ce8cab05550e07486bf89bdd = L.marker(
+                [-7.606591312, 109.5081062],
+                {}
+            ).addTo(marker_cluster_10eda8b1cc011853c73a6756799b5caa);
+        
+    
+        var popup_640a25da39f24e0164765edfaaed572a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_667242deeba7ccfe79a5932747a617a2 = $(`<div id="html_667242deeba7ccfe79a5932747a617a2" style="width: 100.0%; height: 100.0%;">Pasar Gombong:9GV5+76Q, Semanding Satu, Semanding, Kec. Gombong, Kabupaten Kebumen, Jawa Tengah 54414</div>`)[0];
+                popup_640a25da39f24e0164765edfaaed572a.setContent(html_667242deeba7ccfe79a5932747a617a2);
+            
+        
+
+        marker_8e293f13ce8cab05550e07486bf89bdd.bindPopup(popup_640a25da39f24e0164765edfaaed572a)
+        ;
+
+        
+    
+</script>
+</html>

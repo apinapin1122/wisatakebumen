@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f726ede570a4fd431b647e0f34ad925 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f726ede570a4fd431b647e0f34ad925" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f726ede570a4fd431b647e0f34ad925 = L.map(
+                "map_7f726ede570a4fd431b647e0f34ad925",
+                {
+                    center: [-7.670504469610809, 109.65994424208708],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e0575d59460ad25e1d2d2e6883396a7a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7f726ede570a4fd431b647e0f34ad925);
+        
+    
+            var heat_map_7a5cec67c8f7a28794e1e33d19613b8a = L.heatLayer(
+                [[-7.66409314, 109.6601985], [-7.680999179, 109.662605], [-7.67287751, 109.6632314], [-7.644098931, 109.5810891], [-7.673143245, 109.6529242], [-7.672235907, 109.6493161], [-7.635969029, 109.5741869], [-7.767128783, 109.4110741], [-7.757579843, 109.4642118]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_7f726ede570a4fd431b647e0f34ad925);
+        
+    
+            var marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed = L.markerClusterGroup(
+                {}
+            );
+            map_7f726ede570a4fd431b647e0f34ad925.addLayer(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+            var marker_4f8e5a50d23cafc35aed4a51452d89b1 = L.marker(
+                [-7.66409314, 109.6601985],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_2543cc7ea1a502ebec2a364cd1e9d8a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84c857e4193fb70b461bd7ed6f38c2d6 = $(`<div id="html_84c857e4193fb70b461bd7ed6f38c2d6" style="width: 100.0%; height: 100.0%;">Trio Azana style hotel kebumen:Jl. H.M. Sarbini No.109, Gunungmujil, Bumirejo, Kec. Kebumen, Kabupaten Kebumen, Jawa Tengah 54316</div>`)[0];
+                popup_2543cc7ea1a502ebec2a364cd1e9d8a4.setContent(html_84c857e4193fb70b461bd7ed6f38c2d6);
+            
+        
+
+        marker_4f8e5a50d23cafc35aed4a51452d89b1.bindPopup(popup_2543cc7ea1a502ebec2a364cd1e9d8a4)
+        ;
+
+        
+    
+    
+            var marker_9e02823fa0c4754de3dba17b9c3d2c56 = L.marker(
+                [-7.680999179, 109.662605],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_ffea15ac034b99680f63a47f39212b07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d7904d2152b3e072cfc7052d002f4f9 = $(`<div id="html_5d7904d2152b3e072cfc7052d002f4f9" style="width: 100.0%; height: 100.0%;">Mexolie hotel:Jl. Stasiun No.8, Panjer, Kec. Kebumen, Kabupaten Kebumen, Jawa Tengah 54312</div>`)[0];
+                popup_ffea15ac034b99680f63a47f39212b07.setContent(html_5d7904d2152b3e072cfc7052d002f4f9);
+            
+        
+
+        marker_9e02823fa0c4754de3dba17b9c3d2c56.bindPopup(popup_ffea15ac034b99680f63a47f39212b07)
+        ;
+
+        
+    
+    
+            var marker_18d105032598582df8be739b57492f86 = L.marker(
+                [-7.67287751, 109.6632314],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_48c149f8f8568cfb89c352627d5d60e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be9aad94997fac3a6feab5c4562f6227 = $(`<div id="html_be9aad94997fac3a6feab5c4562f6227" style="width: 100.0%; height: 100.0%;">Grand Kolopaking hotel:Jl. Ahmad Yani No.31, Dukuh, Kebumen, Kec. Kebumen, Kabupaten Kebumen, Jawa Tengah 54311</div>`)[0];
+                popup_48c149f8f8568cfb89c352627d5d60e9.setContent(html_be9aad94997fac3a6feab5c4562f6227);
+            
+        
+
+        marker_18d105032598582df8be739b57492f86.bindPopup(popup_48c149f8f8568cfb89c352627d5d60e9)
+        ;
+
+        
+    
+    
+            var marker_fe4ad3db5603083bd36660a186364be4 = L.marker(
+                [-7.644098931, 109.5810891],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_a8d6b72d471ec992e72df30097c74dae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df7f120754fbd4ad213dc45f1f39ac60 = $(`<div id="html_df7f120754fbd4ad213dc45f1f39ac60" style="width: 100.0%; height: 100.0%;">Candisari hotel and resto:Jl. Raya Timur No.KM. 2, Ketugon, Purwodeso, Kec. Karanganyar, Kabupaten Kebumen, Jawa Tengah 54362</div>`)[0];
+                popup_a8d6b72d471ec992e72df30097c74dae.setContent(html_df7f120754fbd4ad213dc45f1f39ac60);
+            
+        
+
+        marker_fe4ad3db5603083bd36660a186364be4.bindPopup(popup_a8d6b72d471ec992e72df30097c74dae)
+        ;
+
+        
+    
+    
+            var marker_5a02ec50dcbef855a03054417da34ea3 = L.marker(
+                [-7.673143245, 109.6529242],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_41293d3cd28185c0c1b9c445c662a5de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f57af85467d0ef8e81eb8dd3176f091 = $(`<div id="html_4f57af85467d0ef8e81eb8dd3176f091" style="width: 100.0%; height: 100.0%;">RedDoorz Kampoeng Etnik Kebumen:Jl. Ronggowarsito, Legok Lor, Pejagoan, Kec. Pejagoan, Kabupaten Kebumen, Jawa Tengah 54361</div>`)[0];
+                popup_41293d3cd28185c0c1b9c445c662a5de.setContent(html_4f57af85467d0ef8e81eb8dd3176f091);
+            
+        
+
+        marker_5a02ec50dcbef855a03054417da34ea3.bindPopup(popup_41293d3cd28185c0c1b9c445c662a5de)
+        ;
+
+        
+    
+    
+            var marker_0a78c4126ca15bb8715edcd57291de11 = L.marker(
+                [-7.672235907, 109.6493161],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_4a08739faa067ee99944e138c1df6a2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_500fe7f043c2ac6053adfa8e4b193aa7 = $(`<div id="html_500fe7f043c2ac6053adfa8e4b193aa7" style="width: 100.0%; height: 100.0%;">Villa Lukolo Kebumen:Pejagoan, Kebumen Regency, Central Java</div>`)[0];
+                popup_4a08739faa067ee99944e138c1df6a2e.setContent(html_500fe7f043c2ac6053adfa8e4b193aa7);
+            
+        
+
+        marker_0a78c4126ca15bb8715edcd57291de11.bindPopup(popup_4a08739faa067ee99944e138c1df6a2e)
+        ;
+
+        
+    
+    
+            var marker_91bc747a2fb4f24c98277a22efdb8e5d = L.marker(
+                [-7.635969029, 109.5741869],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_bb2f614d07fe4ce8f625d0f7340f8868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8333f5e26f2623b71aa620a0678e8f9 = $(`<div id="html_f8333f5e26f2623b71aa620a0678e8f9" style="width: 100.0%; height: 100.0%;">Hotel caliya:9H7F+FJ5, Jingklak, Karanganyar, Kec. Karanganyar, Kabupaten Kebumen, Jawa Tengah 54364</div>`)[0];
+                popup_bb2f614d07fe4ce8f625d0f7340f8868.setContent(html_f8333f5e26f2623b71aa620a0678e8f9);
+            
+        
+
+        marker_91bc747a2fb4f24c98277a22efdb8e5d.bindPopup(popup_bb2f614d07fe4ce8f625d0f7340f8868)
+        ;
+
+        
+    
+    
+            var marker_f7a365724f00103836282b1e330ef2b3 = L.marker(
+                [-7.767128783, 109.4110741],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_f4a9af7ec65bd27df06a2ae6261270c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f8dfb298a140aa3fda801f50086108b = $(`<div id="html_5f8dfb298a140aa3fda801f50086108b" style="width: 100.0%; height: 100.0%;">Movie Menganti Ocean Vie:Desa, Tj. Karangboto, menganti, Kec. Ayah, Kabupaten Kebumen, Jawa Tengah 54473</div>`)[0];
+                popup_f4a9af7ec65bd27df06a2ae6261270c1.setContent(html_5f8dfb298a140aa3fda801f50086108b);
+            
+        
+
+        marker_f7a365724f00103836282b1e330ef2b3.bindPopup(popup_f4a9af7ec65bd27df06a2ae6261270c1)
+        ;
+
+        
+    
+    
+            var marker_af884b4d8de47d3b5aa5d311e6f4b024 = L.marker(
+                [-7.757579843, 109.4642118],
+                {}
+            ).addTo(marker_cluster_0b7ef45ed59eccb754d56dffac5ac0ed);
+        
+    
+        var popup_817d8d1a7c4983541b2de1445e140082 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50641920056f129d4c49cf31c1acf5a3 = $(`<div id="html_50641920056f129d4c49cf31c1acf5a3" style="width: 100.0%; height: 100.0%;">Sagara view hotel:Jl. Pantai Karangbolong, Karangtengah, karang tengah, Kec. Buayan, Kabupaten Kebumen, Jawa Tengah 54474</div>`)[0];
+                popup_817d8d1a7c4983541b2de1445e140082.setContent(html_50641920056f129d4c49cf31c1acf5a3);
+            
+        
+
+        marker_af884b4d8de47d3b5aa5d311e6f4b024.bindPopup(popup_817d8d1a7c4983541b2de1445e140082)
+        ;
+
+        
+    
+</script>
+</html>
